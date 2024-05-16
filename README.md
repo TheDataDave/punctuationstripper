@@ -5,8 +5,9 @@ PunctuationStripper is a Python package that can be used to strip punctuation fr
 pip install punctuationstripper
 
 Once installed, you can use the `punctuationstripper` command to strip punctuation from a file. The basic syntax is:
-
+```rb
 punctuationstripper -f [-n ] [-p ]
+```
 
 where:
 
@@ -15,12 +16,14 @@ where:
 * `<punct>` is a string of characters that you do not want to strip from the text. For example, if you want to keep all periods and commas in the text, you would specify `punct=".,"`.
 
 For example, to strip all punctuation from the file `my_file.txt` and save the stripped text to a new file named `my_file_new.txt`, you would use the following command:
-
+```rb
 punctuationstripper -f my_file.txt -n my_file_new.txt
+```
 
 
 You can also use the `-p` option to specify a string of characters that you do not want to strip from the text. For example, to strip all punctuation from the file `my_file.txt` (and save it as `my_file_new.txt) except for periods and commas, you would use the following command:
-
+```rb
 punctuationstripper -f my_file.txt -p ".,"
+```
 
 PunctuationStripper is a powerful tool that can be used to clean up text data. It is easy to use and can be customized to meet your specific needs.
